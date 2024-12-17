@@ -13,6 +13,10 @@ body {
     font-size: 18px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    padding: 0;
+}
+svg {
+    display: block;
 }
 
 .tasks {
@@ -24,7 +28,7 @@ body {
 }
 .tasks-title {
     font-size: 30px;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 .tasks-keeper {
     display: flex;
@@ -39,6 +43,7 @@ body {
     border-radius: 3px;
     min-height: 190px;
     min-width: 300px;
+    margin: 10px 0;
 }
 .tasks-header {
     display: flex;
@@ -53,7 +58,10 @@ body {
     list-style: none;
     padding: 0 15px;
 }
-
+.tasks-button {
+    margin: 0;
+    padding: 0;
+}
 .tasks-list li {
     background-color: rgb(31, 31, 31);
     padding: 10px;
