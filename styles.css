@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.tasks {
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+    margin: 0 40px;
+    border-radius: 8px;
+    max-width: 75rem;
+}
+.tasks-title {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+.tasks-keeper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: auto;
+}
+.tasks-container {
+    width: 30%;
+    background-color: rgb(45, 45, 45);
+    border: 2px dashed white;
+    border-radius: 3px;
+    min-height: 190px;
+    min-width: 300px;
+}
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.tasks-name {
+    margin: 0 0 0 20px;
+}
+.tasks-list {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.tasks-list li {
+    background-color: rgb(31, 31, 31);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+@media (max-width: 768px) {
+    .tasks-keeper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tasks-container {
+        margin-bottom: 20px;
+        min-width: 95%;
+    }
+}
